@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Start a project. Human-led AI services, intelligent software, and computer vision by Verdant."
+    />
+    <meta name="theme-color" content="#090b09" />
+    <title>Start a project | Verdant</title>
+    <link rel="icon" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script defer src="assets/main.js"></script>
+    <script defer src="assets/effects.js"></script>
+  </head>
+  <body id="top">
+    <a href="#main" class="skip">Skip to content</a>
+    <div class="progress"></div>
+    <header>
+      <a href="index.html" class="brand" aria-label="Verdant home"
+        ><svg viewBox="0 0 40 40" aria-hidden="true">
+          <path
+            d="M4 8h11l5 13 5-13h11L20 36ZM15 3h10l-5 10Z"
+            fill="currentColor"
+          /></svg
+        ><span>verdant<sup>↗</sup></span></a
+      >
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="services.html">Capabilities</a
+        ><a href="work.html">Selected work</a><a href="studio.html">Studio</a>
+      </nav>
+      <div class="actions"><details class="pages-menu"><summary>Pages <span aria-hidden="true">⌄</span></summary><nav class="pages-panel" aria-label="All pages"><div><p class="page-group-label">Explore</p><a href="index.html">Home</a><a href="services.html">Capabilities</a><a href="work.html">Selected work</a><a href="studio.html">Studio</a><a href="contact.html">Contact</a></div><div><p class="page-group-label">Case studies</p><a href="case-study.html?project=signal">Signal / Content intelligence</a><a href="case-study.html?project=sentinel">Sentinel / Document intelligence</a><a href="case-study.html?project=relay">Relay / Workflow automation</a></div><div><p class="page-group-label">More</p><a href="index.html#playground">Interactive lab</a><a href="privacy.html">Privacy & demo information</a><a href="404.html">404 page preview</a></div></nav></details>
+        <button
+          id="motion"
+          aria-label="Pause ambient motion"
+          aria-pressed="false"
+        >
+          Ⅱ</button
+        ><a href="contact.html" class="button light small">Let’s talk ↗</a
+        ><button
+          id="menu"
+          aria-expanded="false"
+          aria-controls="mobile"
+          aria-label="Open menu"
+        >
+          ☰
+        </button>
+      </div>
+      <nav id="mobile" aria-label="Mobile navigation" hidden>
+        <a href="index.html">Home</a><a href="services.html">Capabilities</a
+        ><a href="work.html">Selected work</a><a href="studio.html">Studio</a
+        ><a href="contact.html">Start a project ↗</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="section subhero">
+        <span class="eyebrow">START A CONVERSATION / 04</span>
+        <h1>What’s on<br /><em>your horizon?</em></h1>
+        <p>
+          Big ambition, small question, or a beautifully complicated challenge.
+          Start here.
+        </p>
+      </section>
+      <section class="section contact-grid compact">
+        <aside>
+          <span class="eyebrow">LET’S FIND THE POSSIBILITY</span>
+          <h2>A good brief.<br />A great beginning.</h2>
+          <p>Tell us what you’re thinking. We’ll help connect the dots.</p>
+          <div class="note">
+            <span class="eyebrow">HOW THIS DEMO WORKS</span>
+            <p>
+              Build your brief and download it as a text file. Nothing is sent
+              or stored on a server.
+            </p>
+          </div>
+        </aside>
+        <form id="briefForm">
+          <div class="form-row">
+            <div>
+              <label for="name">Your name *</label
+              ><input
+                id="name"
+                name="name"
+                autocomplete="name"
+                maxlength="100"
+                placeholder="Alex Morgan"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Work email *</label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                maxlength="150"
+                placeholder="alex@company.com"
+                required
+              />
+            </div>
+          </div>
+          <label for="company">Company</label
+          ><input
+            id="company"
+            name="company"
+            autocomplete="organization"
+            placeholder="Your organization"
+          />
+          <fieldset>
+            <legend>What are you exploring? *</legend>
+            <div class="choices">
+              <label
+                ><input
+                  type="radio"
+                  name="service"
+                  value="AI agents"
+                  required
+                /><span>AI agents</span></label
+              ><label
+                ><input
+                  type="radio"
+                  name="service"
+                  value="Intelligent software"
+                  required
+                /><span>Intelligent software</span></label
+              ><label
+                ><input
+                  type="radio"
+                  name="service"
+                  value="Computer vision"
+                  required
+                /><span>Computer vision</span></label
+              ><label
+                ><input
+                  type="radio"
+                  name="service"
+                  value="Let’s discover"
+                  required
+                /><span>Let’s discover</span></label
+              >
+            </div>
+          </fieldset>
+          <label for="budget">Indicative project budget</label
+          ><select id="budget" name="budget">
+            <option>Let’s figure it out</option>
+            <option>$5,000–$15,000</option>
+            <option>$15,000–$50,000</option>
+            <option>$50,000+</option></select
+          ><label for="brief">Tell us about your idea *</label
+          ><textarea
+            id="brief"
+            name="brief"
+            rows="5"
+            minlength="20"
+            maxlength="3000"
+            placeholder="What would you like to make possible? At least 20 characters."
+            required
+          ></textarea>
+          <div class="form-end">
+            <small>Local demo. Your data stays in your browser.</small
+            ><button class="button green" type="submit">
+              Create my brief ↗
+            </button>
+          </div>
+          <div id="briefResult" class="result" role="status" hidden>
+            <h3>Your brief is ready.</h3>
+            <p>
+              No inquiry has been sent. Download it to share with your team.
+            </p>
+            <button type="button" class="button light" id="download">
+              Download brief ↓
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <a href="index.html" class="brand"
+          ><svg viewBox="0 0 40 40" aria-hidden="true">
+            <path
+              d="M4 8h11l5 13 5-13h11L20 36ZM15 3h10l-5 10Z"
+              fill="currentColor"
+            /></svg
+          >verdant</a
+        >
+        <p>Human ambition.<br />Machine possibility.</p>
+        <a href="contact.html" class="text-link">Build what’s next ↗</a>
+      </div>
+      <nav class="footer-pages" aria-label="Footer pages"><div><p class="page-group-label">Explore</p><a href="index.html">Home</a><a href="services.html">Capabilities</a><a href="work.html">Selected work</a><a href="studio.html">Studio</a><a href="contact.html">Contact</a></div><div><p class="page-group-label">Case studies</p><a href="case-study.html?project=signal">Signal / Content intelligence</a><a href="case-study.html?project=sentinel">Sentinel / Document intelligence</a><a href="case-study.html?project=relay">Relay / Workflow automation</a></div><div><p class="page-group-label">More</p><a href="index.html#playground">Interactive lab</a><a href="privacy.html">Privacy & demo information</a><a href="404.html">404 page preview</a></div></nav><div class="footer-bottom">
+        <span>© 2026 Verdant. Demo brand.</span
+        ><a href="privacy.html">Privacy & demo information</a
+        ><span>Independent thinking. Connected intelligence.</span
+        ><a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
